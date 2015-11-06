@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "weather_cmd"
+
+WeatherCmd.parse(ARGV)
