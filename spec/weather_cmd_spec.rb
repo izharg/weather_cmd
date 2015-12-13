@@ -28,7 +28,7 @@ RSpec.describe WeatherCmd do
 
   context ".parse" do
     context "Current weather in Tel-Aviv" do
-      let(:user_input) { ["in", "Tel-Aviv,", "IL"] }
+      let(:user_input) { ["in", "Tel Aviv,", "IL"] }
 
       before(:each) do
         allow(OpenWeather::Current).to receive(:city).and_return(open_weather_api_response)
